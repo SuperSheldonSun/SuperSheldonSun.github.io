@@ -1,0 +1,313 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Yibo Sun</title>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700&family=Lato&family=Open+Sans&display=swap" rel="stylesheet">
+    <style>
+        body {
+            font-family: 'Inter', sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f9f9f9;
+            color: #333;
+            line-height: 1.6;
+        }
+        .container {
+            max-width: 900px;
+            margin: 0 auto;
+            padding: 0 20px;
+        }
+        nav {
+            background: #fff;
+            padding: 1rem 0;
+            box-shadow: 0 2px 4px rgba(0,0,0,0.05);
+            position: sticky;
+            top: 0;
+            z-index: 1000;
+        }
+        nav .container {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+        nav .logo {
+            font-weight: 700;
+            font-size: 1.2em;
+            color: #57068c;
+        }
+        nav ul {
+            list-style: none;
+            margin: 0;
+            padding: 0;
+            display: flex;
+        }
+        nav ul li {
+            margin-left: 20px;
+        }
+        nav a {
+            color: #333;
+            text-decoration: none;
+            font-weight: 500;
+            transition: color 0.3s;
+        }
+        nav a:hover, nav a.active {
+            color: #57068c;
+        }
+        header {
+            background: #fff;
+            padding: 60px 0;
+            text-align: center;
+        }
+        header .container {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            gap: 40px;
+        }
+        header img {
+            width: 150px;
+            height: 150px;
+            border-radius: 50%;
+            object-fit: cover;
+        }
+        header .header-text {
+            text-align: left;
+        }
+        header h1 {
+            font-size: 2.5em;
+            margin: 0;
+            color: #333;
+        }
+        header h1 span {
+            font-size: 0.7em;
+            color: #555;
+        }
+        header p {
+            margin: 5px 0;
+            font-size: 1.1em;
+        }
+        .social-links a {
+            margin-right: 15px;
+            color: #57068c;
+            text-decoration: none;
+            font-weight: bold;
+        }
+        .social-links a:hover {
+            text-decoration: underline;
+        }
+        section {
+            padding: 60px 0;
+            border-bottom: 1px solid #eee;
+        }
+        section:last-of-type {
+            border-bottom: none;
+        }
+        h2 {
+            text-align: center;
+            margin-bottom: 40px;
+            font-size: 2em;
+            color: #57068c;
+        }
+        .about-grid {
+            display: grid;
+            grid-template-columns: 1fr 2fr;
+            gap: 40px;
+            align-items: center;
+        }
+        .about-grid h3 {
+            color: #57068c;
+            margin-top: 0;
+        }
+        .research-item, .publication-item, .project-card {
+            margin-bottom: 30px;
+            background: #fff;
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 2px 5px rgba(0,0,0,0.05);
+        }
+        .research-item h3, .publication-item h3, .project-card h3 {
+            margin-top: 0;
+            color: #333;
+        }
+        .item-meta {
+            font-size: 0.9em;
+            color: #666;
+            margin-bottom: 10px;
+        }
+        .item-links a {
+            margin-right: 10px;
+            font-weight: bold;
+            color: #57068c;
+        }
+        .projects-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 20px;
+        }
+        .cv-section {
+            text-align: center;
+        }
+        .cv-button {
+            display: inline-block;
+            background-color: #57068c;
+            color: white;
+            padding: 12px 25px;
+            text-decoration: none;
+            border-radius: 5px;
+            font-weight: bold;
+            transition: background-color 0.3s;
+        }
+        .cv-button:hover {
+            background-color: #45056e;
+        }
+        footer {
+            text-align: center;
+            padding: 20px 0;
+            background-color: #333;
+            color: white;
+        }
+        .contact-links {
+            font-size: 1.2em;
+        }
+        .contact-links a {
+            margin: 0 10px;
+            color: #57068c;
+            text-decoration: none;
+            font-weight: bold;
+        }
+    </style>
+</head>
+<body>
+    <nav>
+        <div class="container">
+            <a href="#" class="logo">Yibo Sun</a>
+            <ul>
+                <li><a href="#about">About</a></li>
+                <li><a href="#research">Research</a></li>
+                <li><a href="#projects">Projects</a></li>
+                <li><a href="#publications">Publications</a></li>
+                <li><a href="#cv">CV</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <header>
+        <div class="container">
+            <img src="https://via.placeholder.com/150" alt="Yibo Sun">
+            <div class="header-text">
+                <h1>Yibo Sun (孙一博)</h1>
+                <p>Undergraduate Student, Computer Science and Data Science, New York University</p>
+                <p><strong>Expected Graduation:</strong> May 2026</p>
+                <p>New York City | <a href="mailto:sunyibo2027@gmail.com">sunyibo2027@gmail.com</a> | +1 (347) 324-6119</p>
+                <div class="social-links">
+                    <a href="https://github.com/SuperSheldonSun" target="_blank">GitHub</a>
+                    <a href="#" target="_blank">LinkedIn</a>
+                    <a href="#" target="_blank">Google Scholar</a>
+                    <a href="#cv">CV (PDF)</a>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <main>
+        <section id="about">
+            <div class="container">
+                <h2>About Me</h2>
+                <p>👋 Hi! I’m Yibo Sun, an undergraduate joint major in Computer Science and Data Science at New York University (CAS). My research interests include Machine Learning, Large Language Models, Causal Inference, and Computer Vision. I am currently working on research projects involving Synthetic Control Methods for Wildfire Economics, Remote-Sensing Change Detection, and LLM fine-tuning for Emotion Classification.</p>
+                <p>I am passionate about exploring how data and algorithms can help us understand and shape the world. Previously, I worked as a Data Scientist Intern at ByteDance and a Research Scholar (Kringstein Family Fund) at NYU, where I focused on combining causal inference and machine learning. My long-term goal is to become a Machine Learning Scientist, bridging theoretical AI research and practical applications.</p>
+            </div>
+        </section>
+
+        <section id="research">
+            <div class="container">
+                <h2>Research</h2>
+                <div class="research-item">
+                    <h3>Wildfire and House Prices: A Synthetic Control Case Study of Altadena</h3>
+                    <p class="item-meta">Kringstein Family Research Scholar, NYU Dean’s Undergraduate Research Fund | Expected Jan 2025</p>
+                    <p>Built a 2015–2025 Zillow/ACS/CAL FIRE panel dataset and applied Synthetic Control & DiD to estimate post-wildfire economic effects.</p>
+                    <div class="item-links">
+                        <a href="#">[PDF]</a>
+                        <a href="#">[Code]</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="publications">
+            <div class="container">
+                <h2>Publications</h2>
+                 <div class="publication-item">
+                    <h3>An Emotion Text Classification Model Based on Llama3-8b Using Lora Technique</h3>
+                    <p class="item-meta">2024 7th International Conference on Computer Information Science and Application Technology (CISAT)</p>
+                    <p>Fine-tuned a large language model for multi-label emotion recognition; achieved 91% accuracy on the Emotion dataset.</p>
+                    <div class="item-links">
+                        <a href="https://ieeexplore.ieee.org/document/10695440" target="_blank">[Paper]</a>
+                        <a href="https://github.com/SuperSheldonSun/Llama3-8B_Emotion_Text_Classification_LoRA" target="_blank">[Code]</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="projects">
+            <div class="container">
+                <h2>Projects</h2>
+                <div class="projects-grid">
+                    <div class="project-card">
+                        <h3>Braille Recognition & Correction System</h3>
+                        <p>Developed a system using YOLO, CNN, and NLP to detect and translate Braille from images into corrected English text.</p>
+                        <div class="item-links">
+                            <a href="https://github.com/codingharry123/Braille_Recognition" target="_blank">[Code]</a>
+                        </div>
+                    </div>
+                    <div class="project-card">
+                        <h3>StardrewAI– Stardew Valley Game Assistant</h3>
+                        <p>An intelligent RAG-based assistant to guide players through Stardew Valley with hints or full walkthroughs.</p>
+                        <div class="item-links">
+                            <a href="https://github.com/TheRealWiseWolfHolo/StardewAI" target="_blank">[Code]</a>
+                        </div>
+                    </div>
+                    <div class="project-card">
+                        <h3>ByteDance Data Science Internship</h3>
+                        <p class="item-meta">Jan–Mar 2025</p>
+                        <p>Built clustering pipeline for 10k+ user logs, improving marketing ROI by 15%.</p>
+                    </div>
+                    <div class="project-card">
+                        <h3>Hybrid Two-Stage Change Detection</h3>
+                        <p>Combined EVT-based ROI detection and lightweight U-Net with AttentionFusion for efficient change detection.</p>
+                    </div>
+                    <div class="project-card">
+                        <h3>Late-Fusion BERT + SF-IDF for News Recommendation</h3>
+                        <p>Implemented personalized news ranking model (nDCG@K, MRR).</p>
+                    </div>
+                    <div class="project-card">
+                        <h3>Viam Rover Vision System</h3>
+                        <p>Designed color tracking & kinematics modules for autonomous navigation.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="cv" class="cv-section">
+            <div class="container">
+                <h2>CV</h2>
+                <a href="#" class="cv-button">Download CV (PDF)</a>
+            </div>
+        </section>
+    </main>
+
+    <footer id="contact">
+        <div class="container">
+            <p class="contact-links">
+                📧 <a href="mailto:sunyibo2027@gmail.com">sunyibo2027@gmail.com</a> |
+                <a href="https://github.com/SuperSheldonSun" target="_blank">GitHub</a> |
+                <a href="#" target="_blank">LinkedIn</a> |
+                <a href="#" target="_blank">Google Scholar</a>
+            </p>
+        </div>
+    </footer>
+
+</body>
+</html>
